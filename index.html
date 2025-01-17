@@ -2,6 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nice to meet you!</title>
     </head>
     <body>
@@ -60,10 +61,10 @@
     .abuton p {
         position: absolute;
         left: 50%;
-        top: 10%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
+        vertical-align: middle;
     }
     .favicon {
         width: auto;
@@ -97,5 +98,90 @@
     .gh {
         background-color: #333;
         background-image: linear-gradient(45deg, #333 0%, #000 100%);
+    }
+    @media screen and (max-width: 320px) {
+        body {
+            width: 100vw;
+        }
+        .abuton {
+            width: 90%;
+            height: 10vw;
+            margin: 1vw auto;
+            font-size: 300%;
+        }
+        .favicon {
+            height: 10vw;
+        }
+        .abuton p {
+            font-size: 20%;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width:480px) {
+        body {
+            width: 100vw;
+        }
+        .abuton {
+            width: 90%;
+            height: 10vw;
+            margin: 1vw auto;
+            font-size: 300%;
+        }
+        .favicon {
+            height: 10vw;
+        }
+        .abuton p {
+            font-size: 30%;
+        }
+    }
+    @media screen and (min-width:480px) and (max-width: 700px) {
+        body {
+            width: 100vw;
+        }
+        .abuton {
+            width: 90%;
+            height: 10vw;
+            margin: 1vw auto;
+            font-size: 300%;
+        }
+        .favicon {
+            height: 10vw;
+        }
+        .abuton p {
+            font-size: 50%;
+        }
+    }
+    @media screen and (min-width:700px) and (max-width: 1000px) {
+        body {
+            width: 100vw;
+        }
+        .abuton {
+            width: 90%;
+            height: 7vw;
+            margin: 1vw auto;
+            font-size: 300%;
+        }
+        .favicon {
+            height: 7vw;
+        }
+        .abuton p {
+            font-size: 70%;
+        }
+    }
+    @media screen and (min-width:1000px) {
+        body {
+            width: 1000px;
+        }
+        .abuton {
+            width: 70%;
+            height: 5vw;
+            margin: 0.8vw auto;
+            font-size: 200%;
+        }
+        .favicon {
+            height: 5vw;
+        }
+        .abuton p {
+            font-size: 100%;
+        }
     }
 </style>
